@@ -1,3 +1,8 @@
+function checkImageSize($img, max) {
+  expect($img[0].naturalWidth).to.be.greaterThan(0);
+  expect($img[0].width).to.be.lessThan(max);
+}
+
 describe('Lab 1', () => {
   it('Successfully loads', () => {
     cy.fixture('test_values').then((json) => {
@@ -36,9 +41,6 @@ describe('Lab 1', () => {
   it('Should have an image that fits on the page - no bigger than 480px', () => {
     cy.get('img')
       .should('be.visible')
-      .and(($img) => {
-        expect($img[0].naturalWidth).to.be.greaterThan(0);
-        expect($img[0].naturalWidth).to.be.lessThan(481);
-      });
+      .and(($img) => { checkImageSize($img, 481); });
   });
 });

@@ -17,14 +17,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
+    "dotenv": "^8.2.0",
+    "recursive-readdir": "^2.2.2",
+    "chalk": "^4.1.0",
     "nodemon": "^2.0.4"
   },
   "devDependencies": {
     "email-validator": "^2.0.4",
-    "chalk": "^4.1.0",
-    "dotenv": "^8.2.0",
     "html-validate": "^3.0.0",
-    "recursive-readdir": "^2.2.2",
     "cypress": "^4.12.1",
     "cypress-html-validate": "^1.2.2",
     "cypress-wait-until": "^1.7.1",

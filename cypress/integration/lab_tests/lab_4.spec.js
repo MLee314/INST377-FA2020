@@ -137,10 +137,10 @@ describe('Lab 4', () => {
       expect(style.marginLeft).to.equal('0px');
       expect(style.marginLeft).to.equal(style.marginRight);
       expect(style.marginTop).to.equal(style.marginBottom);
-    })
+    });
     cy.get('.flex-outer').should('have.css', 'max-width', '800px');
     cy.get('.flex-outer').should('have.css', 'padding', '0px 16px');
-  })
+  });
 
   it('Your label CSS - p and label both - should be set to flex up to 130px, with a max width of 225px', () => {
     cy.get('.flex-outer > li > label').should('have.css', 'flex', '1 0 125px');
@@ -174,16 +174,16 @@ describe('Lab 4', () => {
   it('Your label elements should have enough padding to space out your form elements', () => {
     cy.get('.flex-outer > li > label').should('have.css', 'padding', '8px');
     cy.get('.flex-outer li p').should('have.css', 'padding', '8px');
-  })
+  });
 
   it('Pick a nice color for your page background', () => {
     cy.get('body').then(($bdy) => {
       console.log($bdy);
-      console.log($bdy.css("background-color"));
-      expect($bdy.css("background-color")).to.not.equal('rgba(0, 0, 0, 0)');
+      console.log($bdy.css('background-color'));
+      expect($bdy.css('background-color')).to.not.equal('rgba(0, 0, 0, 0)');
     });
-  })
-  
+  });
+
   it('Should use the submit button to POST material to the /api endpoint', () => {
     cy.get('form').should('have.attr', 'method', 'post');
     cy.get('button[type=submit]')
