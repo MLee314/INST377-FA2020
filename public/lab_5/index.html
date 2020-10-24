@@ -64,7 +64,7 @@
                     })
 
 
-                    document.querySelector("body").style.backgroundColor = "yellow";
+                    document.querySelector("body").style.backgroundColor = "red";
 
 
                     let headerr = document.querySelector('.headerr');
@@ -72,15 +72,15 @@
                     headerr.textContent = 'Lab 5 for Matthew Lee';
 
                     document.querySelector('.flex-outer').style.margin = "0 auto";
-                     
-                    let x = document.querySelector('.checkbox-list-label')
-                    x.innerHTML = "fruits";
-                    const fruits = ['kiwi', 'dragonfruit', 'pomelo'];
-                    const checks = document.querySelectorAll('.flex-inner label')
-                    checks.forEach((check, i) => {
-                        const text = check.innerText;
+                    
+                    let label = document.querySelector('.checkbox-list-label')
+                    label.textContent = 'Fruits';
+                    const element = document.querySelector('.flex-inner li label')
+                    const array = ['kiwi','dragonfruit','pomelo']
+                    element.forEach((el, i) => {
+                        const text = el.innerText;
                         console.log(text);
-                        check.innerText - fruits[i];
+                        el.innerText = array[i];
                     })
             }
 
