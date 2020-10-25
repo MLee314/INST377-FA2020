@@ -10,8 +10,7 @@ public/demos
 # -------------------------------------------------
 cypress/integration/examples
 cypress/integration/grading
-cypress/fixtures/link_array.json
-cypress/fixtures/test_values.json
+cypress/fixtures/
 
 # -------------------------------------------------
 # Misc CSS Caching
