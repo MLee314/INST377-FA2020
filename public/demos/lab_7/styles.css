@@ -1,0 +1,108 @@
+/*CSS*/
+body {
+  background: #eee;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 125px;
+  max-width: 225px;
+  padding: 8px;
+}
+ 
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 225px;
+}
+
+.flex-outer button {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+}
+
+.flex-inner li {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-inner input {
+  margin-right: 15px;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+.flex-outer {
+  width: 960px;
+  padding: 0 16px;
+  margin:0 auto;
+}
+
+/* New for Lab 7 */
+h1 {
+  margin: 20px 50px;
+  padding: 0 20px;
+  min-height: 75px;
+  background-color: darkolivegreen;
+  color: white;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  flex-wrap: nowrap;
+  border-radius: 4px;
+}
+
+#chartContainer {
+    background: gray;
+    border: 2px dotted black;
+    border-radius: 4px;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+

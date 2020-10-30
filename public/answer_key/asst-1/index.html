@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alex Leitch demo resume</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,600&family=Sansita+Swashed:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Alex Leitch</h1>
+        <img class="logo" src="testudo.jpeg" alt="The UMD tortoise"/>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="one">
+                <img class="image" src="viktor.jpg" alt="Viktor, a character from Yuri on Ice"/>
+                <p>I would like to spend more of my time skating.</p>
+            </div>
+            <div class="two">
+                <h2 class="rolesTitle">Roles</h2>
+                <button type="button" onclick="clickMe()">click me!</button>
+                <p>
+                    Hello, world! Alice and bob went to the store.
+                </p>
+                <ol>
+                    <li>
+                        <h2 class="jobtitle">Herder of Cats</h2>
+                        <div class="jobdesc">Ensure cats move in an even pattern over the greensward</div>
+                        <ul class="resp">
+                            <li>Organize a system of cat motion</li>
+                            <li>Move felines in an artistic way</li>
+                            <li>Dance choreography</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="jobtitle">Digital Services Designer</h2>
+                        <div class="jobdesc">Design and implement digital services for a Canada-US audience</div>
+                        <ul class="resp">
+                            <li>Javascript, HTML, CSS</li>
+                            <li>Scope team development goals</li>
+                            <li>Wireframe page layouts and data flow</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="jobtitle">Makerspace laser wrangler</h2>
+                        <div class="jobdesc">Ensure a class-4 laser system remained operational over a substantial
+                            window of
+                            time</div>
+                        <ul class="resp">
+                            <li>Laser cleaning and maintenance</li>
+                            <li>Knowledge of laser specialty techniques</li>
+                            <li>Familiarity with extensive materials list and response to lasers</li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickMe() {
+            const RolesHeader = document.querySelector('.rolesTitle');
+            console.log(RolesHeader);
+            RolesHeader.innerHTML ="<h3>Hello World </h3>";
+        }
+    </script>
+</body>
+
+</html>
