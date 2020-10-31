@@ -1,3 +1,5 @@
+const { blue, red } = require("chalk");
+
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
   return list;
@@ -12,7 +14,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
   return {
     animationEnabled: true,
     colorSet: 'customColorSet1',
-    title: {
+    title: { 
       text: 'Change This Title'
     },
     axisX: {
@@ -22,9 +24,25 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     axisY2: {
       interlacedColor: 'rgba(1,77,101,.2)',
       gridColor: 'rgba(1,77,101,.1)',
-      title: 'Change This Title',
+      title: 'Places to eat out in future',
       labelFontSize: 12,
-      scaleBreaks: {customBreaks: []} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
+      scaleBreaks: {
+        customBreaks: [{
+          startValue: 40,
+          endValue: 50,
+          color: 'orange'
+        },
+        {
+          startValue: 85,
+          endValue: 100,
+          color: 'orange'
+        },
+        {
+          startValue: 140,
+          endValue: 175,
+          color: 'orange'
+        }]
+      } // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
     },
     data: [{
       type: 'bar',
